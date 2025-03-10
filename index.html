@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamatic Website & Applications</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Material Design -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/14.0.0/material-components-web.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/14.0.0/material-components-web.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.material.css" />
+
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.material.js"></script>
+
+
+
+    <!-- 
+        <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    -->
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <h1 id="" class="headingStyle">Module 2 Assignment</h1>
+
+
+    <div>
+        <p>Question 1</p>
+        <p>Display the list of employees in an unorder list</p>
+
+        <p id="demo"></p>
+        <br />
+        <p>Question 2: Form Design and Validation</p>
+        <p id="myDiv"></p>
+
+
+
+    </div>
+
+
+
+    <!-- Question 1 -->
+
+
+    <!-- 
+    <script src="question1a.js"></script>
+    <script src="question1b-1.js"></script>
+    <script src="question1b-2.js"></script>
+    <script src="question1b-3.js"></script>
+    -->
+
+    <script src="question1b-4.js"></script>
+
+    <!-- Question 2 -->
+
+    <!-- Postal Code : JMAKN03 Denham Town (Kingston 14) -->
+
+    <!-- 
+    
+    -->
+
+
+
+    <div class="container">
+        <form action="" id="billingForm">
+            <fieldset>
+                <legend>Billing Information</legend>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="firstName" placeholder="John" required></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lastName" placeholder="Doe" required></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" placeholder="john.doe@mail.com" required></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" placeholder="Enter your address..." required></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="city" placeholder="example: May Pen"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="statePro">State/Province</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="statePro" placeholder="Clarendon"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="postalCode">Postal Code</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="postalCode" placeholder="JMAKN03"></input>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="can">Canada</option>
+                            <option value="china">China</option>
+                            <option value="jam">Jamaica</option>
+                            <option value="japan">Japan</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="bra">Brazil</option>
+                            <option value="rus">Russia</option>
+                            <option value="ger">Germany</option>
+                            <option value="aus">Australia</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <!--
+                <div class="row">
+                    <div class="col-25">
+                        <label for="postalCode">Postal Code</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="postalCode" placeholder="JMAKN03"></input>
+                    </div>
+                </div>
+                -->
+
+                <div class="row">
+                    <div class="col-25">
+                        <label>Payment Method</label>
+                    </div>
+                    <input type="radio" id="paypal" name="drones" value="paypal" checked />
+                    <label class="radio-inline" for="paypal">Paypal</label>
+
+                    <input type="radio" id="visa" name="drones" value="visa" />
+                    <label class="radio-inline" for="visa">Visa</label>
+
+                    <input type="radio" id="mc" name="drones" value="mastercard" />
+                    <label class="radio-inline" for="mc">MasterCard</label>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="cardNumber">Card Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="cardNumber" name="cardDetails" placeholder="1234980"></input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="expirationDate">Expiration Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="expirationDate" name="cardDetail" placeholder="MM/YY"
+                            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"></input>
+
+                        <!--
+                        
+                        -->
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+
+
+    <p id="error-message" style="color:red;" class="error"></p>
+
+
+
+    <div class="container">
+        <form action="" id="shippingForm">
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <div class="checkbox-container">
+                    <!--<input type="checkbox" id="shipping-test" onclick="myFunction()" name="user-shipping" checked> -->
+                    <input type="checkbox" id="shipping-test" name="user-shipping" checked>
+                    <label for="shipping">Same
+                        as
+                        billing</label>
+                </div>
+
+                <p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+                <div id="shippingFields" style="display:none;">
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="shippingAddress">Shipping Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="shippingAddress" placeholder="123 Main St">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="shippingState">State/Province</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="shippingState" placeholder="Clarendon"></input>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="shippingCountry">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="shippingCountry" name="country">
+                                <option value="can">Canada</option>
+                                <option value="china">China</option>
+                                <option value="jam">Jamaica</option>
+                                <option value="japan">Japan</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="bra">Brazil</option>
+                                <option value="rus">Russia</option>
+                                <option value="ger">Germany</option>
+                                <option value="aus">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="shippingZipCode">Zip Code</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="shippingZipCode" placeholder="12345">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+    <p id="shippingErrorMessage" style="color:red;" class="error"></p>
+
+    <!--
+
+    <div class="container">
+        <form action="">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country/State</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+    -->
+
+
+
+
+    <script src="question2.js"></script>
+
+
+    <!-- Question 3 -->
+
+    <p>Question 3: Loading and Displaying Data in DataTables</p>
+    <header>
+        <h1>Data Table</h1>
+    </header>
+
+
+    <table id="employeeTable" class="mdl-data-table  row-border" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+    </table>
+
+    <script src="question3.js"></script>
+
+
+
+</body>
+
+</html>
